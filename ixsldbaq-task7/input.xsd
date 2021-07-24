@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="students">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="student"  maxOccurs="unbounded" minOccurs="0">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="firstname" type="xsd:string"/>
+                            <xsd:element name="lastname" type="xsd:string"/>
+                            <xsd:element name="initials">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[A-Z].[A-Z].[A-Z]"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="age" type="xsd:int"/>
+                            <xsd:element name="group">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:int">
+                                        <xsd:minInclusive value="1"/>
+                                        <xsd:maxInclusive value="3"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="city">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="Kharkiv"/>
+                                        <xsd:enumeration value="Kiev"/>
+                                        <xsd:enumeration value="Odessa"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute type="xsd:int" name="id"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

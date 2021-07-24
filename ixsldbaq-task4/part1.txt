@@ -1,0 +1,3 @@
+Some str
+Second string
+Привет как дела

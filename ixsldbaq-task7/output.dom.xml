@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student id="1">
+        <firstname>Artur</firstname>
+        <lastname>Kasumov</lastname>
+        <initials>K.A.I</initials>
+        <age>19</age>
+        <group>1</group>
+        <city>Kharkiv</city>
+    </student>
+    <student id="2">
+        <firstname>Vasya</firstname>
+        <lastname>Pupkin</lastname>
+        <initials>P.V.A</initials>
+        <age>19</age>
+        <group>3</group>
+        <city>Kiev</city>
+    </student>
+</students>
